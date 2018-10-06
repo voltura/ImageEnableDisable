@@ -10,7 +10,7 @@ namespace ImageEnableDisable
         public MainForm()
         {
             InitializeComponent();
-            InitializeImage(ref _pictureBox1);
+            InitializeImage(ref _pictureBoxAsButton);
         }
 
         private void InitializeImage(ref PictureBox pictureBox)
@@ -61,6 +61,14 @@ namespace ImageEnableDisable
         private void PictureBox1_MouseEnter(object sender, EventArgs e)
         {
             SwitchImage((PictureBox)sender);
+        }
+
+        private void _pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show(this, "Close " + Application.ProductName + "?", Application.ProductName + " version " + Application.ProductVersion, MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                Application.Exit();
+            }
         }
     }
 }
