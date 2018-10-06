@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{6B038C7A-2EF0-4226-8D14-ED3A7882D2C5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>AdvancedContextMenu</RootNamespace>
-    <AssemblyName>AdvancedContextMenu</AssemblyName>
+    <RootNamespace>ImageEnableDisable</RootNamespace>
+    <AssemblyName>ImageEnableDisable</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
