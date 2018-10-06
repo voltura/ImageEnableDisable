@@ -11,6 +11,7 @@ namespace ImageEnableDisable
         {
             InitializeComponent();
             InitializeImage(ref _pictureBoxAsButton);
+            new ToolTip().SetToolTip(_pictureBoxAsButton, "Click me");
         }
 
         private void InitializeImage(ref PictureBox pictureBox)
