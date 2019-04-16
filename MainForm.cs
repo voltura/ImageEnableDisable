@@ -10,8 +10,8 @@ namespace ImageEnableDisable
         public MainForm()
         {
             InitializeComponent();
-            InitializeImage(ref _pictureBoxAsButton);
-            new ToolTip().SetToolTip(_pictureBoxAsButton, "Click me");
+            InitializeImage(ref pictureBoxAsButton);
+            new ToolTip().SetToolTip(pictureBoxAsButton, "Click me");
         }
 
         private void InitializeImage(ref PictureBox pictureBox)
@@ -64,9 +64,16 @@ namespace ImageEnableDisable
             SwitchImage((PictureBox)sender);
         }
 
-        private void _pictureBox1_Click(object sender, EventArgs e)
+        private void PictureBox1_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show(this, "Close " + Application.ProductName + "?", Application.ProductName + " version " + Application.ProductVersion, MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            AskToExit();
+        }
+
+        private void AskToExit()
+        {
+            if (DialogResult.Yes == MessageBox.Show(this,
+                $"Close {Application.ProductName}?", $"{Application.ProductName} version {Application.ProductVersion}",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 Application.Exit();
             }

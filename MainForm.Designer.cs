@@ -17,24 +17,24 @@
 
         private void InitializeComponent()
         {
-            this._pictureBoxAsButton = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this._pictureBoxAsButton)).BeginInit();
+            this.pictureBoxAsButton = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAsButton)).BeginInit();
             this.SuspendLayout();
             // 
-            // _pictureBoxAsButton
+            // pictureBoxAsButton
             // 
-            this._pictureBoxAsButton.BackColor = System.Drawing.Color.Transparent;
-            this._pictureBoxAsButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._pictureBoxAsButton.Location = new System.Drawing.Point(0, 0);
-            this._pictureBoxAsButton.Name = "_pictureBoxAsButton";
-            this._pictureBoxAsButton.Size = new System.Drawing.Size(600, 400);
-            this._pictureBoxAsButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this._pictureBoxAsButton.TabIndex = 0;
-            this._pictureBoxAsButton.TabStop = false;
-            this._pictureBoxAsButton.WaitOnLoad = true;
-            this._pictureBoxAsButton.Click += new System.EventHandler(this._pictureBox1_Click);
-            this._pictureBoxAsButton.MouseEnter += new System.EventHandler(this.PictureBox1_MouseEnter);
-            this._pictureBoxAsButton.MouseLeave += new System.EventHandler(this.PictureBox1_MouseLeave);
+            this.pictureBoxAsButton.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxAsButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxAsButton.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxAsButton.Name = "pictureBoxAsButton";
+            this.pictureBoxAsButton.Size = new System.Drawing.Size(600, 400);
+            this.pictureBoxAsButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxAsButton.TabIndex = 0;
+            this.pictureBoxAsButton.TabStop = false;
+            this.pictureBoxAsButton.WaitOnLoad = true;
+            this.pictureBoxAsButton.Click += new System.EventHandler(this.PictureBox1_Click);
+            this.pictureBoxAsButton.MouseEnter += new System.EventHandler(this.PictureBox1_MouseEnter);
+            this.pictureBoxAsButton.MouseLeave += new System.EventHandler(this.PictureBox1_MouseLeave);
             // 
             // MainForm
             // 
@@ -43,7 +43,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(600, 400);
-            this.Controls.Add(this._pictureBoxAsButton);
+            this.Controls.Add(this.pictureBoxAsButton);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -55,7 +55,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Image Enable Disable Example";
             this.TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)(this._pictureBoxAsButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAsButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -63,6 +63,6 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox _pictureBoxAsButton;
+        private System.Windows.Forms.PictureBox pictureBoxAsButton;
     }
 }
