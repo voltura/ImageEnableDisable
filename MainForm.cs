@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Runtime;
 
 namespace ImageEnableDisable
 {
@@ -49,8 +50,12 @@ namespace ImageEnableDisable
 
         private static void CleanupMemory()
         {
+            GCSettings.LargeObjectHeapCompactionMode = GCLargeObjectHeapCompactionMode.CompactOnce;
+            GCSettings.LatencyMode = GCLatencyMode.Batch;
             GC.Collect();
             GC.WaitForPendingFinalizers();
+            GC.Collect();
+            GC.WaitForFullGCComplete(1000);
         }
 
         private static void LogCaller()
