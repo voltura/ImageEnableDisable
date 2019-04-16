@@ -58,7 +58,7 @@ namespace ImageEnableDisable
             StackTrace stackTrace = new StackTrace();
             var functionCalled = stackTrace.GetFrame(1).GetMethod().Name;
             var functionCalledFrom = stackTrace.GetFrame(2).GetMethod().Name;
-            Debug.WriteLine(string.Format("{0} called from {1}", functionCalled, functionCalledFrom));
+            Debug.WriteLine($"{functionCalled} called from {functionCalledFrom}");
         }
 
         private void PictureBox1_MouseLeave(object sender, EventArgs e)
