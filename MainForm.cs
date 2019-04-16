@@ -44,6 +44,13 @@ namespace ImageEnableDisable
             pictureBox.InitialImage = pictureBox.Image;
             pictureBox.Image = pictureBox.BackgroundImage;
             pictureBox.BackgroundImage = pictureBox.InitialImage;
+            CleanupMemory();
+        }
+
+        private static void CleanupMemory()
+        {
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
         }
 
         private static void LogCaller()
