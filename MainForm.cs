@@ -45,7 +45,7 @@ namespace ImageEnableDisable
             LogCaller();
             try
             {
-                pb.Load(@"http://voltura.se/voltura/wp-content/themes/zwin/images/photo.jpg");
+                pb.Load(@"https://avatars2.githubusercontent.com/u/2292809?s=460&v=4");
                 using (Bitmap c = new Bitmap(pb.Image))
                 {
                     pb.InitialImage = ToolStripRenderer.CreateDisabledImage(c);
