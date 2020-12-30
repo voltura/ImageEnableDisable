@@ -33,8 +33,8 @@
             this.pictureBoxA.TabStop = false;
             this.pictureBoxA.WaitOnLoad = true;
             this.pictureBoxA.Click += new System.EventHandler(this.PictureBoxA_Click);
-            this.pictureBoxA.MouseEnter += new System.EventHandler(this.PictureBoxA_MouseEnter);
-            this.pictureBoxA.MouseLeave += new System.EventHandler(this.PictureBoxA_MouseLeave);
+            this.pictureBoxA.MouseEnter += new System.EventHandler(this.PictureBoxA_MouseEnterOrLeave);
+            this.pictureBoxA.MouseLeave += new System.EventHandler(this.PictureBoxA_MouseEnterOrLeave);
             // 
             // MainForm
             // 

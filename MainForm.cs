@@ -15,12 +15,7 @@ namespace ImageEnableDisable
             InitializeImage(ref pictureBoxA);
         }
 
-        private void PictureBoxA_MouseLeave(object sender, EventArgs e)
-        {
-            SwitchImage((PictureBox)sender);
-        }
-
-        private void PictureBoxA_MouseEnter(object sender, EventArgs e)
+        private void PictureBoxA_MouseEnterOrLeave(object sender, EventArgs e)
         {
             SwitchImage((PictureBox)sender);
         }
@@ -45,7 +40,7 @@ namespace ImageEnableDisable
             LogCaller();
             try
             {
-                pb.Load(@"https://avatars2.githubusercontent.com/u/2292809?s=460&v=4");
+                pb.Load(@"https://i.ibb.co/1GVKNP7/youngme.png");
                 using (Bitmap c = new Bitmap(pb.Image))
                 {
                     pb.InitialImage = ToolStripRenderer.CreateDisabledImage(c);
